@@ -106,3 +106,10 @@ function playPattern(i, arrLength) {
   }, 500);
 
 }
+
+var mq = window.matchMedia( "(max-width: 450px)" );
+if (mq.matches) {
+  nextSequence();
+  gameStart = true;
+  $("#mode").show();
+}
